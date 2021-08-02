@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="result-container">
+        <div class="result"></div>
+      </div>
+      <div class="button-container">
+        <button class="button">%</button>
+        <button class="button" onclick="clearOnClick()">C</button>
+        <button class="button" onclick="backSpaceOnClick()"><-</button>
+        <button class="button operator" onclick="operatorOnClick('/')">
+          /
+        </button>
+        <button class="button" onclick="numberOnClick(7)">7</button>
+        <button class="button" onclick="numberOnClick(8)">8</button>
+        <button class="button" onclick="numberOnClick(9)">9</button>
+        <button class="button operator" onclick="operatorOnClick('*')">
+          X
+        </button>
+        <button class="button" onclick="numberOnClick(4)">4</button>
+        <button class="button" onclick="numberOnClick(5)">5</button>
+        <button class="button" onclick="numberOnClick(6)">6</button>
+        <button class="button operator" onclick="operatorOnClick('-')">
+          -
+        </button>
+        <button class="button" onclick="numberOnClick(1)">1</button>
+        <button class="button" onclick="numberOnClick(2)">2</button>
+        <button class="button" onclick="numberOnClick(3)">3</button>
+        <button class="button operator" onclick="operatorOnClick('+')">
+          +
+        </button>
+        <button class="button flex-grow-1">0</button>
+        <button class="button" onclick="numberOnClick('.')">.</button>
+        <button class="button operator" onclick="resultOnClick()">=</button>
+      </div>
+    </div>
+  </body>
+</html>
